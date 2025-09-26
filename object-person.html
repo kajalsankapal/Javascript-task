@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <h4>Display all properties of a person object using for in loop</h4>
+</head>
+<body>
+    <script>
+        let person ={
+            Name : "Kajal",
+            Age : 20,
+            Address : "Peth Vadgaon"
+        };
+        for (let key in person){
+            document.write(key + " : ",person[key],"<br>");
+        }
+    </script>
+</body>
+</html>
