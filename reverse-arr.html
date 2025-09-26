@@ -8,7 +8,15 @@
 <body>
     <h4>Program to reverse an array without using .reverse() function</h4>
     <script>
-        
+        let arr2 = [1, 2, 3, 4, 5];
+        let reversed = [];
+
+        for (let i = arr2.length - 1; i >= 0; i--) {
+                    reversed.push(arr2[i]);
+        }
+        document.write("Original Array : ",arr2,"<br>");
+        document.write("Reversed Array: " , reversed.join(", ") , "<br>");
+
     </script>
 </body>
 </html>

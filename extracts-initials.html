@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h4>Extract initials from an array of full names</h4>
+    <script>
+        let names = ["kajal sankapal", "juien mujawar", "samruddhi magdum"];
+        let initials = names.map(function(fullName) {
+        let parts = fullName.split(" ");
+        return parts.map(word => word[0].toUpperCase()).join("");
+});
+
+document.write("Names: " ,names , "<br>");
+document.write("Initials: " , initials);
+</script>
+
+    </script>
+</body>
+</html>
