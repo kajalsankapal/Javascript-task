@@ -8,9 +8,13 @@
 <body>
     <h4>Use .map() to create a new array with squares of all numbers</h4>
     <script>
-        let arr1 = [1,2,3,4,5];
-        let arr2 = arr1.map(arr1 => arr1 * 2);
-        document.write(arr2);
+        let arr1 = [2,3,4,5,6];
+        let squ = (arr1) => {
+            return arr1.map(n => n * n);
+        };
+        let result = squ(arr1);
+        document.write("Squre root of numbers : " ,result);
+
     </script>
 </body>
 </html>
